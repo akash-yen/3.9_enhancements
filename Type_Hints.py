@@ -15,3 +15,49 @@ def add(x :int,y: int) -> None:
 # py -m mypy test.py
 #or
 #mypy test.py
+
+def add_str(x:str,y:str) -> str:
+    return x+y
+
+print(add_str.__annotations__)
+
+#{'x': <class 'str'>, 'y': <class 'str'>, 'return': <class 'str'>}
+
+
+a: int = 10
+
+
+# for list , Tuple , Set we need use typing module
+
+from typing import List
+
+names : List[str] = ['akash','prudhvi']
+
+def get_names() -> List[str]:
+    names: List[str] = []
+    names.append('akash')
+    names.append('Prudhvi')
+    names.append(10)
+
+    return names
+
+def sum(a: int,b:int) -> None:
+    print(a+b)
+def f1(f: callable[[int,int],None],x: int,y:int) -> None:
+    f(x,y)
+
+f1(sum,10,20)
+
+
+# multiple data types
+
+from typing import Union
+
+def f1(x: Union[int,float]) -> None:
+    print(x)
+
+# optional is an alternative for either int or None return type
+
+
+
+
