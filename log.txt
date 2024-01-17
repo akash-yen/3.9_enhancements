@@ -1,0 +1,7 @@
+2024-01-12 15:09:13,713:INFO:a new request came
+2024-01-12 15:09:17,129:ERROR:division by zero
+Traceback (most recent call last):
+  File "/Users/akashyenumula/PycharmProjects/python_3.9/3.9_enhancements/logging_module.py", line 32, in <module>
+    print('the result',x/y)
+ZeroDivisionError: division by zero
+2024-01-12 15:09:17,131:INFO:request processing compleeted

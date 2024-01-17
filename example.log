@@ -1,0 +1,15 @@
+WARNING:root:Watch out!
+INFO:root:I told you so
+WARNING:root:Watch out!
+INFO:root:I told you so
+WARNING:root:Watch out!
+INFO:root:I told you so
+WARNING:root:Watch out!
+INFO:root:I told you so
+INFO:root:a new request came
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "/Users/akashyenumula/PycharmProjects/python_3.9/3.9_enhancements/logging_module.py", line 32, in <module>
+    print('the result',x/y)
+ZeroDivisionError: division by zero
+INFO:root:request processing compleeted
